@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-property-list',
   templateUrl: './property-list.component.html',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyListComponent implements OnInit {
 
-  Property: any = [{
+  Properties: any = [{
     "Id": 1,
     "Name": "Kame House",
     "Type": "House",
