@@ -3,7 +3,8 @@
     "Id": 1,
     "Name": "Kame House",
     "Type": "House",
-    "Price": 12000
+    "Price": 12000,
+    "Img": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
   },
   {
     "Id": 2,

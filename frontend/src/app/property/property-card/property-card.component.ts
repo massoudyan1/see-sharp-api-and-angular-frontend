@@ -16,22 +16,23 @@ export class PropertyCardComponent implements OnInit {
   @Input() property_name: any;
   @Input() property_type: any;
   @Input() property_price: any;
+  @Input() property_img: any;
 
   Property: any = {
     "Id": "",
     "Name": "",
     "Type": "",
     "Price": "",
+    "Img": ""
   };
   constructor() { }
 
   ngOnInit(): void {
-    console.log('id: ' + this.property_id)
     this.Property.Id = this.property_id;
     this.Property.Name = this.property_name;
     this.Property.Type = this.property_type;
     this.Property.Price = this.property_price;
-    console.log(this.Property.Id)
+    this.Property.Img = this.property_price;
   }
 
 }
