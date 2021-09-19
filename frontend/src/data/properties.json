@@ -9,7 +9,7 @@
   },
   {
     "Id": 2,
-    "sellRent": 1,
+    "sellRent": 2,
     "Name": "Goku House",
     "Type": "House",
     "Price": 30000
@@ -23,7 +23,7 @@
   },
   {
     "Id": 4,
-    "sellRent": 1,
+    "sellRent": 2,
     "Name": "Bulma House",
     "Type": "Mainsion",
     "Price": 700000,

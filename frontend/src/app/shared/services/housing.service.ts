@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators'
+import { catchError, filter, map } from 'rxjs/operators';
 import { IProperty } from '../models/property.model';
 import { Observable } from 'rxjs';
+
+
 @Injectable({
   providedIn: 'root',
 })
@@ -10,14 +12,9 @@ export class HousingService {
 
   constructor(private http: HttpClient) {}
 
-
-
-
-  // I cannot get this function to work
-  getAllProperties(SellRent: number): Observable<IProperty[]>{
-    return this.http.get('data/properties.json').pipe(
-      map(data => {
-
+  getAllProperties(SellRent: number): Observable<IProperty[]> {
+    return this.http.get<any[]>('data/properties.json').pipe(
+      map((data) => {
         const propertiesArray: Array<IProperty> = [];
 
         for(const id in data){
@@ -25,8 +22,10 @@ export class HousingService {
             propertiesArray.push(data[id]);
           }
         }
-
         return propertiesArray;
       })
     );
-  }}
+
+
+  }
+}
