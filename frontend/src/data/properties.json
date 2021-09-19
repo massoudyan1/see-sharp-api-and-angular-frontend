@@ -1,27 +1,33 @@
 [
   {
     "Id": 1,
+    "sellRent": 1,
     "Name": "Kame House",
     "Type": "House",
     "Price": 12000,
-    "Img": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+    "Img": "https://m.media-amazon.com/images/I/A1TtGTFXqdL._SS500_.jpg"
   },
   {
     "Id": 2,
+    "sellRent": 1,
     "Name": "Goku House",
     "Type": "House",
     "Price": 30000
   },
   {
     "Id": 3,
+    "sellRent": 2,
     "Name": "Vegeta House",
     "Type": "House",
     "Price": 122000
   },
   {
     "Id": 4,
+    "sellRent": 1,
     "Name": "Bulma House",
     "Type": "Mainsion",
-    "Price": 700000
+    "Price": 700000,
+    "Img": "https://reviewersunite.files.wordpress.com/2015/07/dbzbog51.jpg"
+
   }
 ]

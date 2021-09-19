@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
 import { PropertyListComponent } from './property/property-list/property-list.component';
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: "property-detail/:id",
     component: PropertyDetailComponent
+  },
+  {
+    path: "**",
+    component: PageNotFoundComponent
   }
 ];
 

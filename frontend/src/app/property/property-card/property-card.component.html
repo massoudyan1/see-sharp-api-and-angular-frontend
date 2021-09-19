@@ -1,15 +1,16 @@
 <div class="card">
   <div class="card-img-wrapper">
     <img
-      *ngIf="this.Property.Image"
+      *ngIf="this.Property.Img"
       class="card-img-top"
       src="{{ this.Property.Img }}"
       class="authorPlaceholderImg"
     />
     <img
-      *ngIf="!this.Property.Image"
+      *ngIf="!this.Property.Img"
       class="card-img-top"
       src="../../../assets/images/house-placeholder.jpg"
+      title="placeholder image"
       class="authorPlaceholderImg"
     />
 
@@ -19,7 +20,7 @@
           class="btn btn-secondary"
           routerLink="/property-detail/{{ this.Property.Id }}"
         >
-          <i class="fas fa-edit"></i>
+          <i class="fas fa-info-circle"> </i>
         </button>
       </li>
       <li class="list-inline-item">

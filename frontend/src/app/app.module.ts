@@ -9,6 +9,7 @@ import { PropertyListComponent } from './property/property-list/property-list.co
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { HousingService } from './shared/services/housing.service';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HousingService } from './shared/services/housing.service';
     PropertyListComponent,
       NavbarComponent,
       HomeComponent,
+      PageNotFoundComponent,
    ],
   imports: [
     BrowserModule,

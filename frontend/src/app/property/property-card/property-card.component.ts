@@ -1,5 +1,6 @@
 import { identifierModuleUrl } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
+import { IProperty } from 'src/app/shared/models/property.model';
 
 
 @Component({
@@ -18,11 +19,12 @@ export class PropertyCardComponent implements OnInit {
   @Input() property_price: any;
   @Input() property_img: any;
 
-  Property: any = {
-    "Id": "",
+  Property: IProperty = {
+    "Id": 0,
+    "SellRent": 0,
     "Name": "",
     "Type": "",
-    "Price": "",
+    "Price": 0,
     "Img": ""
   };
   constructor() { }
@@ -32,7 +34,7 @@ export class PropertyCardComponent implements OnInit {
     this.Property.Name = this.property_name;
     this.Property.Type = this.property_type;
     this.Property.Price = this.property_price;
-    this.Property.Img = this.property_price;
+    this.Property.Img = this.property_img;
   }
 
 }
